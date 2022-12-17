@@ -21,11 +21,11 @@ fun Application.configureRouting() {
         get {
             call.respondText("Hello, world")
         }
-        swaggerUI(path = "swagger", swaggerFile = "openapi/documentation.yaml") {
-            version = "4.15.5"
-        }
-        openAPI(path = "openapi", swaggerFile = "openapi/documentation.yaml") {
-            codegen = StaticHtmlCodegen()
-        }
+//        swaggerUI(path = "swagger", swaggerFile = "openapi/documentation.yaml") {
+//            version = "4.15.5"
+//        }
+//        openAPI(path = "openapi", swaggerFile = "openapi/documentation.yaml") {
+//            codegen = StaticHtmlCodegen()
+//        }
     }
 }
