@@ -16,7 +16,7 @@ fun Application.configureRouting() {
 
     val daoFacade: DAOFacade = DAOFacadeImpl()
     userRouting(daoFacade)
-    authenticationRouting()
+    authenticationRouting(daoFacade)
     routing {
         get {
             call.respondText("Hello, world")

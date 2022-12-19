@@ -12,8 +12,9 @@ data class User(
 
 object Users : Table() {
     val id = integer("id").autoIncrement()
-    val name = varchar("firstName", 128)
+    val firstName = varchar("firstName", 128)
     val lastName = varchar("lastName", 128)
+    val password = varchar("password", 128)
 
     override val primaryKey = PrimaryKey(id)
 }
